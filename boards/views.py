@@ -11,7 +11,7 @@ from django.urls import reverse_lazy,reverse
 from .forms import NewTopicForm, PostForm
 from .models import Board, Post, Topic
 
-
+#this is CBV type
 @method_decorator(login_required, name='dispatch')
 class UserUpdateView(UpdateView):
     model = User
