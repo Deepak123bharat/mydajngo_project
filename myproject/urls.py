@@ -3,6 +3,7 @@ from django.urls import path,include
 from boards import views
 from accounts import views as accounts_views
 from django.contrib.auth import views as auth_views
+# it is main url file
 urlpatterns = [
 
     path('boards/<int:pk>/',views.TopicListView.as_view(),name='board_topics'),
